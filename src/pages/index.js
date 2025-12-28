@@ -10,7 +10,7 @@ export default function Home() {
     setResult("");
 
     try {
-      const r = await fetch("/api/process", {
+      const r = await fetch("/api/ai", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, type }),
